@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import {nanoid} from 'nanoid'
 //生成唯一标识
 import './index.css'
 export default class index extends Component {
  
+// 对接受的props进行：类型、必要性的限制
+static propTypes={
+  add:PropTypes.func.isRequired
+}
+// 键盘事件的回调
   handleKeyUp=(event)=>{
     //结构赋值获取keyCode,target
     const{keyCode,target}=event
