@@ -3,6 +3,7 @@ import React from 'react'
 // 引入App组件
 import App from './App'
 import { BrowserRouter } from 'react-router-dom';
+import ReactDom from 'react-dom'
 // 引入reactdom
 // import  ReactDOM  from 'react-dom'
 // 使用createRoot

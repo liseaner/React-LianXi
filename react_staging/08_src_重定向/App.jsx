@@ -3,9 +3,6 @@ import { NavLink,Routes,Route } from 'react-router-dom'
 import About from './pages/About'
 import Home from './pages/Home'
 export default function App() {
-  function computedClassName({isActive}){
-    return isActive?'list-group-item light2':'list-group-item'
-  }
   return (
     <div>
       <div className="row">
@@ -17,8 +14,8 @@ export default function App() {
         <div className="col-xs-2 col-xs-offset-2">
           <div className="list-group">
             {/* 路由连接 */}
-            <NavLink className={computedClassName} to="/about">About</NavLink>
-            <NavLink className={computedClassName} to="/home">Home</NavLink>
+            <NavLink className="list-group-item" to="/about">About</NavLink>
+            <NavLink className="list-group-item" to="/home">Home</NavLink>
           </div>
         </div>
         <div className="col-xs-6">

@@ -2,7 +2,6 @@
 import React from 'react'
 // 引入App组件
 import App from './App'
-import { BrowserRouter } from 'react-router-dom';
 // 引入reactdom
 // import  ReactDOM  from 'react-dom'
 // 使用createRoot
@@ -18,8 +17,4 @@ const root =createRoot(container);
 
 // 渲染App到页面
 // ReactDOM.render(<App/>,document.getElementById('root'))
-root.render(
-<BrowserRouter>
-<App/>
-</BrowserRouter>
-)
+root.render(<App/>)
